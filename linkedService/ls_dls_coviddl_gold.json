@@ -1,0 +1,19 @@
+{
+	"name": "ls_dls_coviddl_gold",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://dlscoviddl.dfs.core.windows.net/",
+			"accountKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_kv_covid",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "kvdatalakev2"
+			}
+		}
+	}
+}

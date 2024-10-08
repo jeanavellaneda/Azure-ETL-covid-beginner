@@ -1,0 +1,9 @@
+{
+	"name": "adf-etl-covid",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e8c09328-d6b8-460c-86be-c8536723524e",
+		"tenantId": "7c59f9b6-e658-4e06-94c1-a2af56936872"
+	}
+}

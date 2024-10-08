@@ -1,0 +1,72 @@
+{
+	"name": "ds_asql_covid",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_asql_covid",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "date",
+				"type": "date"
+			},
+			{
+				"name": "state",
+				"type": "varchar"
+			},
+			{
+				"name": "city",
+				"type": "varchar"
+			},
+			{
+				"name": "place_type",
+				"type": "varchar"
+			},
+			{
+				"name": "confirmed",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "deaths",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "order_for_place",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "is_last",
+				"type": "varchar"
+			},
+			{
+				"name": "estimated_population_2019",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "city_ibge_code",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "confirmed_per_100k_inhabitants",
+				"type": "varchar"
+			},
+			{
+				"name": "death_rate",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "covid_db",
+			"table": "covid_population"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
