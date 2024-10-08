@@ -1,1 +1,0 @@
-# Azure-ETL-covid-beginner
