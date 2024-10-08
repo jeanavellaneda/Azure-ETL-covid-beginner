@@ -46,22 +46,22 @@
 <br><br>
 
 # Adicional
-<h3 style="margin-left: 1em;">1. <strong>Key Vault</strong> : Creamos los secretos que seran utilizados en los linkedservices.</h3>
+<h3 style="margin-left: 1em;"><strong>Key Vault</strong> : Creamos los secretos que seran utilizados en los linkedservices.</h3>
 <img src="assets/keyvault_1.png" style="width: 80%; height: auto;"><br>
 
-<h3 style="margin-left: 1em;">1. <strong>Triggers</strong> : Creamos un trigger, con una fecha y hora especifica que ejecutará automaticamente.</h3>
+<h3 style="margin-left: 1em;"><strong>Triggers</strong> : Creamos un trigger, con una fecha y hora especifica que ejecutará automaticamente.</h3>
 <img src="assets/trigger_1.png" style="width: 80%; height: auto;"><br>
 <img src="assets/trigger_2.png" style="width: 80%; height: auto;"><br>
 
-<h3 style="margin-left: 1em;">1. <strong>Insights</strong> : Creamos una alerta en monitorización datafactory.</h3>
+<h3 style="margin-left: 1em;"><strong>Insights</strong> : Creamos una alerta en monitorización datafactory.</h3>
 <img src="assets/alert_1.png" style="width: 80%; height: auto;"><br>
 <img src="assets/alert_2.png" style="width: 80%; height: auto;"><br>
 <img src="assets/alert_3.png" style="width: 80%; height: auto;"><br>
 <img src="assets/alert_4.png" style="width: 80%; height: auto;"><br>
 <img src="assets/alert_5.png" style="width: 80%; height: auto;"><br>
-<h3 style="margin-left: 1em;">Si nos aparece el siguiente error debemos registrar insights a nuestra subscription.</h3>
+<h3 style="margin-left: 1em;">- Si nos aparece el siguiente error debemos registrar insights a nuestra subscription.</h3>
 <img src="assets/alert_6.png" style="width: 80%; height: auto;"><br>
-<h3 style="margin-left: 1em;">Si en el proceso de la condicion falla, enviará un correo.</h3>
+<h3 style="margin-left: 1em;">- Si en el proceso de la condicion falla, enviará un correo.</h3>
 <img src="assets/alert_7.png" style="width: 80%; height: auto;"><br>
 <img src="assets/alert_8.png" style="width: 80%; height: auto;"><br>
 
