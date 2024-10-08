@@ -1,0 +1,20 @@
+{
+	"name": "ls_adb_covid",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-2181559093113030.10.azuredatabricks.net",
+			"accessToken": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_kv_covid",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "kvdatabricks"
+			},
+			"existingClusterId": "1003-000800-nw5wnv0p"
+		}
+	}
+}

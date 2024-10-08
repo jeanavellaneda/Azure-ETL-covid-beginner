@@ -1,0 +1,24 @@
+{
+	"name": "ls_asql_covid",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "serverasql.database.windows.net",
+			"database": "asql_covid",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "admin10",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_kv_covid",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "kvazuresqlv2"
+			}
+		}
+	}
+}

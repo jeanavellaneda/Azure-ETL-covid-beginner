@@ -1,0 +1,73 @@
+{
+	"name": "ds_covid_population_bs",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob_covidbs",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "covid_population.csv",
+				"container": "population"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "date",
+				"type": "String"
+			},
+			{
+				"name": "state",
+				"type": "String"
+			},
+			{
+				"name": "city",
+				"type": "String"
+			},
+			{
+				"name": "place_type",
+				"type": "String"
+			},
+			{
+				"name": "confirmed",
+				"type": "String"
+			},
+			{
+				"name": "deaths",
+				"type": "String"
+			},
+			{
+				"name": "order_for_place",
+				"type": "String"
+			},
+			{
+				"name": "is_last",
+				"type": "String"
+			},
+			{
+				"name": "estimated_population_2019",
+				"type": "String"
+			},
+			{
+				"name": "city_ibge_code",
+				"type": "String"
+			},
+			{
+				"name": "confirmed_per_100k_inhabitants",
+				"type": "String"
+			},
+			{
+				"name": "death_rate",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
